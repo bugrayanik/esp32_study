@@ -1,0 +1,26 @@
+[1/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/hello_world_main.c.obj
+[2/10] Linking C static library esp-idf/main/libmain.a
+[3/10] Performing build step for 'bootloader'
+[1/1] cd /home/bugra/esp/deneme/hello_world/build/bootloader/esp-idf/esptool_py && /home/bugra/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/bugra/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/bugra/esp/deneme/hello_world/build/bootloader/bootloader.bin
+Bootloader binary size 0x66e0 bytes. 0x920 bytes (8%) free.
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable hello_world.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.3
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/bugra/esp/deneme/hello_world/build/hello_world.bin
+[7/8] cd /home/bugra/esp/deneme/hello_world/build/esp-idf/esptool_py && /home/bugra/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/bugra/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/bugra/esp/deneme/hello_world/build/partition_table/partition-table.bin /home/bugra/esp/deneme/hello_world/build/hello_world.bin
+hello_world.bin binary size 0x2ad90 bytes. Smallest app partition is 0x100000 bytes. 0xd5270 bytes (83%) free.
+[7/8] cd /home/bugra/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/bugra/esp/esp-idf -D "SERIAL_TOOL=/home/bugra/.espressif/python_env/idf5.1_py3.10_env/bin/python;;/home/bugra/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/bugra/esp/deneme/hello_world/build -P /home/bugra/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool esp32 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 hello_world.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.3
+Serial port /dev/ttyUSB0
+Connecting......................................
+
+A fatal error occurred: Failed to connect to ESP32: Wrong boot mode detected (0x13)! The chip needs to be in download mode.
+For troubleshooting steps visit: https://docs.espressif.com/projects/esptool/en/latest/troubleshooting.html
+FAILED: CMakeFiles/flash /home/bugra/esp/deneme/hello_world/build/CMakeFiles/flash 
+cd /home/bugra/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/bugra/esp/esp-idf -D "SERIAL_TOOL=/home/bugra/.espressif/python_env/idf5.1_py3.10_env/bin/python;;/home/bugra/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/bugra/esp/deneme/hello_world/build -P /home/bugra/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+ninja: build stopped: subcommand failed.

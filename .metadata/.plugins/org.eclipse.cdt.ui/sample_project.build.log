@@ -1,0 +1,13 @@
+Total sizes:
+Used static DRAM:   12128 bytes ( 168608 remain, 6.7% used)
+      .data size:    9824 bytes
+      .bss  size:    2304 bytes
+Used static IRAM:   47690 bytes (  83382 remain, 36.4% used)
+      .text size:   46663 bytes
+   .vectors size:    1027 bytes
+Used Flash size :  118911 bytes
+           .text:   87747 bytes
+         .rodata:   30908 bytes
+Total image size:  176425 bytes (.bin may be padded larger)
+/home/bugra/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/bugra/esp/esp-idf/components/partition_table/gen_esp32part.py /home/bugra/esp/deneme/sample_project/build/partition_table/partition-table.bin
+Total time taken to build the project: 2,248 ms

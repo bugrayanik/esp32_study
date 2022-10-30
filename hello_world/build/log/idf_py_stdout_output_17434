@@ -1,0 +1,2 @@
+[1/1] cd /home/bugra/esp/deneme/hello_world/build/esp-idf/esptool_py && /home/bugra/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/bugra/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/bugra/esp/deneme/hello_world/build/partition_table/partition-table.bin /home/bugra/esp/deneme/hello_world/build/hello_world.bin
+hello_world.bin binary size 0x2ae50 bytes. Smallest app partition is 0x100000 bytes. 0xd51b0 bytes (83%) free.
